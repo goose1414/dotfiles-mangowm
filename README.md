@@ -15,7 +15,7 @@ im pretty new to ricing so it's not perfect, but it works on my machine. feel fr
 - notifications: mako
 - files: thunar
 - font: JetBrainsMono Nerd Font
-- theme: catppuccin mocha
+- gtk theme: [catppuccin mocha](https://www.gnome-look.org/p/1996672)
 
 gtk stuff is in `gtk-3.0`, `gtk-4.0`, `nwg-look` and `xsettingsd`. there's also an `htop` config and some xfce settings that thunar uses.
 
@@ -29,14 +29,16 @@ back up your own configs before copying anything over, because it will overwrite
 cp -r ~/.config ~/.config.bak
 ```
 
-then copy over whichever folders you want:
+then copy over the folders you want:
 
 ```bash
 cp -r waybar rofi alacritty mako mango ~/.config/
 ```
 
-restart mangowm (or just log out and back in) and it should pick everything up.
+restart mangowm and it should work.
 
 ## heads up
 
 some configs might have paths that only work on my setup. if something doesn't load, check the paths first.
+
+some of the dotfiles were made with help from claude, but from my testing they are stable and pretty

@@ -2,7 +2,11 @@
 
 my catppuccin mocha setup for mangowm.
 
-i will put screen shot leter oki
+## gallery
+![fastfetch](screenshot-1793220412.png)
+![dwindle windows](screenshot-1793220469.png)
+![desktop](screenshot-1793220486.png)
+
 
 im pretty new to ricing so it's not perfect, but it works on my machine. feel free to steal whatever you like.
 
@@ -17,6 +21,7 @@ im pretty new to ricing so it's not perfect, but it works on my machine. feel fr
 - font: JetBrainsMono Nerd Font
 - gtk theme: [catppuccin mocha](https://www.gnome-look.org/p/1996672)
 - wallpaper: [koi.png](https://github.com/orangci/walls-catppuccin-mocha/blob/master/koi.jpg?raw=true)
+- screenshot utilities: grim + slurp
 
 gtk stuff is in `gtk-3.0`, `gtk-4.0`, `nwg-look` and `xsettingsd`. there's also an `htop` config and some xfce settings that thunar uses.
 
@@ -35,6 +40,7 @@ then copy over the folders you want:
 ```bash
 cp -r waybar rofi alacritty mako mango ~/.config/
 ```
+remember! dont copy the screenshots xd.
 
 restart mangowm and it should work.
 

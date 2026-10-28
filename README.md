@@ -27,22 +27,39 @@ gtk stuff is in `gtk-3.0`, `gtk-4.0`, `nwg-look` and `xsettingsd`. there's also 
 
 ## installing
 
-these are just my config folders, so you need the programs installed first. get the nerd font too or your icons will be empty boxes.
+these are just my config folders, so install the programs first. you need the nerd font too or your icons will be empty boxes.
 
-back up your own configs before copying anything over, because it will overwrite them:
+### packages (arch)
 
-```bash
+```
+# mango: install from the AUR, use whatever package name you actually used
+yay -S waybar-git rofi alacritty mako thunar grim slurp nwg-look xsettingsd htop ttf-jetbrains-mono-nerd
+```
+
+### configs
+
+back up your own stuff first, because this will overwrite it:
+
+```
 cp -r ~/.config ~/.config.bak
 ```
 
-then copy over the folders you want:
+then clone and copy the core folders:
 
-```bash
+```
+git clone https://github.com/goose1414/dotfiles-mangowm
+cd dotfiles-mangowm
 cp -r waybar rofi alacritty mako mango ~/.config/
 ```
-remember! dont copy the screenshots xd.
 
-restart mangowm and it should work.
+optional extras (gtk theming, thunar settings, htop):
+
+```
+cp -r gtk-3.0 gtk-4.0 nwg-look xsettingsd htop Thunar ~/.config/
+cp -r xfce4 ~/.config/
+```
+
+restart mangowm and it should work. if something doesn't load, check the paths first (see heads up below).
 
 ## heads up
 

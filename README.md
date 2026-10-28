@@ -13,7 +13,7 @@ im pretty new to ricing so it's not perfect, but it works on my machine. feel fr
 ## what i'm using
 
 - wm: mangowm
-- bar: waybar
+- bar: waybar, you need waybar-git!!!
 - launcher: rofi
 - terminal: alacritty
 - notifications: mako

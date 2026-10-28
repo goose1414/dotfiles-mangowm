@@ -1,0 +1,114 @@
+configuration {
+  modi: "drun,run,window";
+  show-icons: true;
+  icon-theme: "breeze-dark";
+  font: "JetBrainsMono Nerd Font 14";
+  display-drun: "  apps";
+  display-run: "  run";
+  display-window: "  win";
+  drun-display-format: "{name}";
+}
+
+* {
+  bg:      #1e1e2e;
+  surface: #45475a;
+  fg:      #cdd6f4;
+  sub:     #bac2de;
+  muted:   #6c7086;
+  blue:    #89b4fa;
+  red:     #f38ba8;
+  green:   #a6e3a1;
+  yellow:  #f9e2af;
+
+  background-color: transparent;
+  text-color: @fg;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+window {
+  width: 650px;
+  background-color: @bg;
+  border: 2px;
+  border-color: @blue;
+  border-radius: 0;
+}
+
+mainbox {
+  padding: 14px;
+  children: [ inputbar, listview ];
+  spacing: 12px;
+}
+
+inputbar {
+  padding: 10px 14px;
+  spacing: 8px;
+  background-color: @surface;
+  children: [ prompt, entry ];
+}
+
+prompt {
+  text-color: @blue;
+}
+
+entry {
+  placeholder: "search...";
+  placeholder-color: @sub;
+  text-color: @fg;
+}
+
+listview {
+  lines: 8;
+  columns: 1;
+  scrollbar: false;
+  fixed-height: true;
+}
+
+element {
+  padding: 8px 12px;
+  spacing: 10px;
+}
+
+element normal.normal,
+element alternate.normal {
+  background-color: transparent;
+  text-color: @fg;
+}
+
+element selected.normal {
+  background-color: @blue;
+  text-color: @bg;
+}
+
+element normal.urgent,
+element alternate.urgent {
+  background-color: transparent;
+  text-color: @red;
+}
+
+element selected.urgent {
+  background-color: @red;
+  text-color: @bg;
+}
+
+element normal.active,
+element alternate.active {
+  background-color: transparent;
+  text-color: @green;
+}
+
+element selected.active {
+  background-color: @green;
+  text-color: @bg;
+}
+
+element-icon {
+  size: 1.4em;
+  vertical-align: 0.5;
+}
+
+element-text {
+  vertical-align: 0.5;
+  text-color: inherit;
+}

@@ -16,6 +16,7 @@ im pretty new to ricing so it's not perfect, but it works on my machine. feel fr
 - files: thunar
 - font: JetBrainsMono Nerd Font
 - gtk theme: [catppuccin mocha](https://www.gnome-look.org/p/1996672)
+- wallpaper: [koi.png](https://github.com/orangci/walls-catppuccin-mocha/blob/master/koi.jpg?raw=true)
 
 gtk stuff is in `gtk-3.0`, `gtk-4.0`, `nwg-look` and `xsettingsd`. there's also an `htop` config and some xfce settings that thunar uses.
 

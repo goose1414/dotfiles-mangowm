@@ -13,7 +13,7 @@ im pretty new to ricing so it's not perfect, but it works on my machine. feel fr
 ## what i'm using
 
 - wm: mangowm
-- bar: waybar, you need waybar-git!!!
+- bar: waybar-git
 - launcher: rofi
 - terminal: alacritty
 - notifications: mako
@@ -32,8 +32,7 @@ these are just my config folders, so install the programs first. you need the ne
 ### packages (arch)
 
 ```
-# mango: install from the AUR, use whatever package name you actually used
-yay -S waybar-git rofi alacritty mako thunar grim slurp nwg-look xsettingsd htop ttf-jetbrains-mono-nerd
+yay -S mangowm waybar-git rofi alacritty mako thunar grim slurp nwg-look xsettingsd htop ttf-jetbrains-mono-nerd
 ```
 
 ### configs
